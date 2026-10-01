@@ -20,7 +20,7 @@ index.html            bio, project list, work, education, skills
 projects/*.html       one page per project, same layout
 style.css             the only stylesheet
 media/<project>/      photos and videos for that project
-cv.pdf                linked from the index (add it)
+cv.pdf                linked from the index, downloads on click
 ```
 
 ## Adding media
