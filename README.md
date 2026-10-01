@@ -47,11 +47,11 @@ Photos: resize to about 1600 px wide before committing.
 | Project | File | Source |
 | --- | --- | --- |
 | Smart Lamps | `demo.mp4` | T7 `Alex/University/S2/Project One/mihaialexandrumatei-SmartLamps.mp4` (46 s) |
-| Smart Lamps | `build.jpg`, `circuit.png` | build photos + `Circuit.png` in the Project One folder |
+| Smart Lamps | `build.jpg`, `circuit.jpg` | `frontcover.jpg` and `main.jpg` (hand-drawn wiring) in the Project One folder |
 | Immersive room | `demo.mp4` | T7 `Alex/University/S4/USB Team project/Demo_Video.MOV` (4 min, HEVC: cut to ~60 s) |
 | Immersive room | `panorama-*.jpg` | the stored panoramas (downscale) |
 | Airfield | `drone-demo.mp4` | Industry project `final_source/frontend/assets/drone-demo.mp4` |
-| Airfield | `health-map.png` | screenshot of the frontend |
+| Airfield | `drone-demo.mp4` notes | 6x speed, top 48 px cropped to remove the DJI filename/timestamp overlay. No health map: it would show the real airfield layout |
 | Warehouse robot | `demo.mp4` | needs recording |
 | Couple lamps | `demo.mp4`, photos | needs recording |
 
