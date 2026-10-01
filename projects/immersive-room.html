@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Immersive room · Alex Matei</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<p><a href="../index.html">← back</a></p>
+
+<h1>360° immersive room + ESP32 scent diffusers</h1>
+<p class="dim">Nov 2025 – Jan 2026 · Howest team project for occupational therapy · team of 3 · product owner</p>
+
+<p>You describe a place out loud. About a minute later you are standing in it:
+an 8K 360° panorama on four projectors, with matching sound and scent.</p>
+
+<!-- media/immersive-room/demo.mp4 (cut to ~60 s) -->
+<div class="ph">[video: room demo]</div>
+
+<h2>How it works</h2>
+<ol>
+  <li>Azure Speech transcribes what you say.</li>
+  <li>GPT-4o-mini rewrites it into an image prompt.</li>
+  <li>ComfyUI on a campus GPU generates a seamless 360° panorama (SDXL + a 360 LoRA), upscaled to 8192×4096.</li>
+  <li>Unity shows it on four projectors with ambient sound.</li>
+  <li>Four ESP32 units switch scent diffusers: beach, forest, garden, mountain.</li>
+</ol>
+
+<!-- media/immersive-room/panorama-1.jpg, panorama-2.jpg -->
+<div class="ph">[image: generated panorama]</div>
+
+<h2>My part</h2>
+<p>Product owner, the whole backend, the electronics and the documentation.
+I designed and programmed the four scent diffusers (ESP-IDF C, MQTT over TLS) and 3D-printed their housings.
+The Unity front end was built by my two teammates.</p>
+
+<!-- media/immersive-room/diffuser.jpg -->
+<div class="ph">[photo: scent diffuser]</div>
+
+<h2>Stack</h2>
+<p>.NET 8 Azure Functions, Azure OpenAI, Azure Speech, Blob Storage, IoT Hub, ComfyUI, ESP-IDF, Unity 6.</p>
+
+<p class="dim">Code: not public yet.</p>
+
+</body>
+</html>

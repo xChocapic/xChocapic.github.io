@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Lamps · Alex Matei</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<p><a href="../index.html">← back</a></p>
+
+<h1>Smart Lamps: gesture-controlled lighting</h1>
+<p class="dim">May – June 2025 · Howest Project One · solo</p>
+
+<p>Three lamps you control with hand gestures. A camera on the main lamp reads your hand
+and the other two lamps react over Wi-Fi.</p>
+
+<!-- media/smart-lamps/demo.mp4 (46 s) -->
+<div class="ph">[video: 46 s demo]</div>
+
+<h2>How it works</h2>
+<p>A Raspberry Pi 5 runs a YOLO hand-gesture model on a USB webcam and publishes each gesture over MQTT.
+Two ESP32 lamps subscribe, fade their NeoPixel rings and show their state on a small OLED.</p>
+
+<pre>
+gesture        action
+-------        ------
+fist (2 s)     pick the next lamp
+palm           on / off
+like           colour 1
+dislike        colour 2
+v-sign         colour 3
+</pre>
+
+<h2>Model</h2>
+<p>Five classes, 3,675 images. mAP50 ≈ 0.995, mAP50-95 ≈ 0.986.</p>
+
+<h2>Hardware</h2>
+<p>Raspberry Pi 5, 2× ESP32, 3× NeoPixel ring, 3× OLED, ultrasonic sensor, USB camera.
+About €157 in parts. Laser-cut 8 mm plywood bases with a fabric diffuser.</p>
+
+<!-- media/smart-lamps/build.jpg, media/smart-lamps/circuit.png -->
+<div class="ph">[photo: the lamps]</div>
+<div class="ph">[image: wiring diagram]</div>
+
+<h2>Stack</h2>
+<p>Python, Ultralytics YOLO, OpenCV, paho-mqtt · Arduino C++ (PubSubClient, NeoPixel, SSD1306).</p>
+
+<p class="dim">Code: <a href="https://github.com/xChocapic/smart-lamps">github.com/xChocapic/smart-lamps</a> (being cleaned up).</p>
+
+</body>
+</html>

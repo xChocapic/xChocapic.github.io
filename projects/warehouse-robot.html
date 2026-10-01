@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Warehouse robot simulation · Alex Matei</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<p><a href="../index.html">← back</a></p>
+
+<h1>Warehouse forklift robot simulation</h1>
+<p class="dim">April 2026 · 3D Programming final project · solo</p>
+
+<p>A simulated forklift robot that finds its way through a warehouse, recognises the pallet it needs
+from a camera image, and picks it up.</p>
+
+<!-- media/warehouse-robot/demo.mp4 (60–90 s screen capture) -->
+<div class="ph">[video: screen capture]</div>
+
+<h2>How it works</h2>
+<ul>
+  <li>Grid A* pathfinding with path smoothing and replanning.</li>
+  <li>A control state machine with motor torque, braking and fork control.</li>
+  <li>Vision loop: the robot camera image goes to a backend for YOLO detection, then the robot backs off, scans, verifies and re-inserts the forks.</li>
+</ul>
+
+<h2>Model</h2>
+<p>YOLO fine-tuned on a synthetic dataset generated in Unity. Six symbol classes,
+mAP50 0.823 and mAP50-95 0.775 on 364 validation images. Exported to ONNX.</p>
+
+<h2>Stack</h2>
+<p>Unity 6 (about 6,100 lines of C#), FastAPI, SQLAlchemy, SQLite, Docker, Ultralytics YOLO, ONNX.</p>
+
+<p class="dim">Code: not public yet.</p>
+
+</body>
+</html>

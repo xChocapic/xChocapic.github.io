@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Airfield lighting inspection · Alex Matei</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<p><a href="../index.html">← back</a></p>
+
+<h1>Drone-based airfield lighting inspection</h1>
+<p class="dim">May – June 2026 · S4 industry project for Intersoft Electronics · team of 4</p>
+
+<p>A night drone flight over a runway approach becomes a health map of every ground light:
+which lamps work, which are off, and which could not be judged.</p>
+
+<!-- media/airfield-inspection/drone-demo.mp4 -->
+<div class="ph">[video: drone demo]</div>
+
+<h2>How it works</h2>
+<ol>
+  <li>YOLO + SAHI detects lights in each of the 715 frames.</li>
+  <li>Camera rays are projected back onto the ground using the drone's PPK positioning.</li>
+  <li>A small residual MLP corrects the projected positions.</li>
+  <li>Detections are matched to the surveyed lamps within 12 m.</li>
+  <li>Each lamp is classified by colour and health.</li>
+</ol>
+
+<h2>Result</h2>
+<p>529 lamps working, 5 off or missing, 4 not assessable. 96–97% identification accuracy.</p>
+
+<!-- media/airfield-inspection/health-map.png -->
+<div class="ph">[screenshot: health map]</div>
+
+<h2>My part</h2>
+<p>The Azure backend: processing pipeline, worker, read-only API and infrastructure.
+Also the production frontend, the training and calibration deliverables, and the final packaging.</p>
+
+<h2>Stack</h2>
+<p>Python, Ultralytics YOLO, SAHI, PyTorch, FastAPI, Azure Container Apps, Bicep, DJI drone imagery.</p>
+
+<p class="dim">Code: not public yet.</p>
+
+</body>
+</html>
