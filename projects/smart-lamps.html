@@ -16,8 +16,7 @@
 <p>Three lamps you control with hand gestures. A camera on the main lamp reads your hand
 and the other two lamps react over Wi-Fi.</p>
 
-<!-- media/smart-lamps/demo.mp4 (46 s) -->
-<div class="ph">[video: 46 s demo]</div>
+<video src="../media/smart-lamps/demo.mp4" controls preload="metadata"></video>
 
 <h2>How it works</h2>
 <p>A Raspberry Pi 5 runs a YOLO hand-gesture model on a USB webcam and publishes each gesture over MQTT.
@@ -40,9 +39,8 @@ v-sign         colour 3
 <p>Raspberry Pi 5, 2× ESP32, 3× NeoPixel ring, 3× OLED, ultrasonic sensor, USB camera.
 About €157 in parts. Laser-cut 8 mm plywood bases with a fabric diffuser.</p>
 
-<!-- media/smart-lamps/build.jpg, media/smart-lamps/circuit.png -->
-<div class="ph">[photo: the lamps]</div>
-<div class="ph">[image: wiring diagram]</div>
+<img src="../media/smart-lamps/build.jpg" alt="The three lamps: the main lamp with camera and distance sensor, and two ESP32 lamps">
+<img src="../media/smart-lamps/circuit.jpg" alt="Hand-drawn wiring diagram of the main lamp and an ESP32 lamp">
 
 <h2>Stack</h2>
 <p>Python, Ultralytics YOLO, OpenCV, paho-mqtt · Arduino C++ (PubSubClient, NeoPixel, SSD1306).</p>
