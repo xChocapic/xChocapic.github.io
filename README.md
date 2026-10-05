@@ -47,8 +47,10 @@ Photos: resize to about 1600 px wide before committing.
 | Project | File | Source |
 | --- | --- | --- |
 | Smart Lamps | `demo.mp4` | T7 `Alex/University/S2/Project One/mihaialexandrumatei-SmartLamps.mp4` (46 s) |
+| Smart Lamps | `live-test.mp4` | live gesture test clip (26 s), from the Market demos folder |
 | Smart Lamps | `build.jpg`, `circuit.jpg` | `frontcover.jpg` and `main.jpg` (hand-drawn wiring) in the Project One folder |
 | Immersive room | `demo.mp4` | T7 `Alex/University/S4/USB Team project/Demo_Video.MOV` (4 min, HEVC: cut to ~60 s) |
+| Immersive room | `full-demo.mp4` | the full 4 min `Demo_Video.MOV`, 720p CRF 31 |
 | Immersive room | `panorama-1.jpg`, `panorama-2.jpg` | T7 `Alex/uni_mac/Uni/USB Team project/ErgoGroup1FinalVersion.zip` → `Assets/GeneratedPanoramas/panorama_20260127_161838.png`, `panorama_20260114_123145.png` (8192×4096, downscaled to 1600) |
 | Immersive room | `diffuser.jpg` | still at 0:26 of `media/immersive-room/demo.mp4` (no separate photo on the T7) |
 | Airfield | `drone-demo.mp4` | Industry project `final_source/frontend/assets/drone-demo.mp4` |
