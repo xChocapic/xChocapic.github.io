@@ -21,7 +21,7 @@
 <p>You describe a place out loud. About a minute later you are standing in it:
 an 8K 360° panorama on four projectors, with matching sound and scent.</p>
 
-<video src="../media/immersive-room/demo.mp4" controls preload="metadata"></video>
+<video src="../media/immersive-room/demo.mp4" poster="../media/immersive-room/demo-poster.jpg" controls preload="metadata"></video>
 
 <h2>How it works</h2>
 <ol>
@@ -41,7 +41,7 @@ I designed and programmed the four scent diffusers (ESP-IDF C, MQTT over TLS) an
 The Unity front end was built by my two teammates.</p>
 
 <img src="../media/immersive-room/diffuser.jpg" alt="One of the ESP32 scent diffusers: yellow 3D-printed housing with a fan on top, in front of the projection">
-<img src="../media/immersive-room/diffuser-diagram.png" alt="Diagram of the scent diffusers: the room app calls a Python Azure Function, which sends a command through Azure IoT Hub over MQTT/TLS to four ESP32s; each ESP32 switches two fans through a relay">
+<a href="../media/immersive-room/diffuser-diagram.png"><img src="../media/immersive-room/diffuser-diagram.png" alt="Diagram of the scent diffusers: the room app calls a Python Azure Function, which sends a command through Azure IoT Hub over MQTT/TLS to four ESP32s; each ESP32 switches two fans through a relay"></a>
 
 <h2>Stack</h2>
 <p>.NET 8 Azure Functions, Azure OpenAI, Azure Speech, Blob Storage, IoT Hub, ComfyUI, ESP-IDF, Unity 6.</p>
