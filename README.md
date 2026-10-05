@@ -54,7 +54,6 @@ Photos: resize to about 1600 px wide before committing.
 | Airfield | `drone-demo.mp4` | Industry project `final_source/frontend/assets/drone-demo.mp4` |
 | Airfield | `drone-demo.mp4` notes | 6x speed, top 48 px cropped to remove the DJI filename/timestamp overlay. No health map: it would show the real airfield layout |
 | Warehouse robot | `demo.mp4` | needs recording |
-| Couple lamps | `demo.mp4`, photos | needs recording |
 
 ## Rules
 
